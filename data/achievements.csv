@@ -1,0 +1,7 @@
+achievement_id,name,description,type,target,rarity,game,reward_xp,reward_title,enabled
+common_collector,Common Collector,Collect 100 common items,pulls,100,common,,5000,,yes
+rare_collector,Rare Collector,Collect 100 rare items,pulls,100,rare,,5000,,yes
+epic_collector,Epic Collector,Collect 100 epic items,pulls,100,epic,,5000,,yes
+legendary_collector,Legendary Collector,Collect 100 legendary items,pulls,100,legendary,,5000,,yes
+level_10,Promotion,Reach level 10,level,10,,,0,Promotion,yes
+big_spender,Big Spender,Drop 5 levels below your highest level,level_drop,5,,,0,,yes

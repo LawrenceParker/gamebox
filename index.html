@@ -8,13 +8,17 @@
 </head>
 <body>
 <header>
-  <h1 id="title">Card Vault</h1>
-  <div class="wallet"><span id="credits">0</span> <span id="currency"></span></div>
+  <div class="lvl"><strong id="level">Level 1</strong><span id="rank" class="muted"></span></div>
+  <div class="xpwrap">
+    <div class="bar" id="bar" role="progressbar" aria-label="Level progress" aria-valuemin="0" aria-valuemax="100"><div id="xpfill"></div></div>
+    <div class="xpnums"><span id="xpProgress"></span><span id="xpTotal"></span></div>
+  </div>
 </header>
 <main>
-  <nav id="games" aria-label="Games"></nav>
+  <div id="notice" class="notice" role="status" hidden></div>
   <section><h2>Open a box</h2><div id="boxes" class="boxes"></div></section>
-  <section><h2>Collection <span id="progress" class="muted"></span></h2><div id="grid" class="grid"></div></section>
+  <section><h2>Collection <span id="progress" class="muted"></span></h2><nav id="games" aria-label="Games"></nav><div id="grid" class="grid"></div></section>
+  <section><h2>Achievements <span id="achProgress" class="muted"></span></h2><div id="achs" class="achs"></div></section>
   <p id="error" class="error" hidden></p>
   <button id="reset" class="link">Reset progress</button>
 </main>
