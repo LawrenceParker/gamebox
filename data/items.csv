@@ -1,3 +1,4 @@
 item_id,item_name,rarity,value,game,image,gif
 1,Wooden Pickaxe,common,300,Minecraft,https://minecraft.wiki/images/Wooden_Pickaxe_JE3_BE3.png?fa797,
 2,Enchanted Wooden Pickaxe,rare,600,Minecraft,,https://minecraft.wiki/images/Enchanted_Wooden_Pickaxe.gif?38125
+3,Test Item, legendary, 15000, Test Game,,
