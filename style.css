@@ -1,9 +1,7 @@
 :root{--bg:#14171c;--panel:#1d2128;--line:#2c323b;--text:#e6e8eb;--muted:#8b94a1;--accent:#6cc4a1}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
-header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:1px solid var(--line)}
 h1{font-size:1.25rem;margin:0}h2{font-size:1.05rem;margin:0 0 12px}
-.wallet{font-weight:600;font-size:1.1rem}.wallet #currency{color:var(--muted);font-weight:400}
 main{max-width:1000px;margin:0 auto;padding:24px}
 section{margin-bottom:32px}
 .muted{color:var(--muted);font-weight:400;font-size:.9rem}
@@ -37,3 +35,17 @@ dialog[open] .card{animation:in .25s ease-out}
 .error{color:#ff8a80}
 @keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){dialog[open] .card{animation:none}}
+header{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding:12px 24px;border-bottom:1px solid var(--line)}
+.lvl{min-width:140px;line-height:1.2}.lvl strong{font-size:1.15rem;display:block}
+.xpwrap{flex:1;min-width:200px}
+.bar{height:10px;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.bar>div{height:100%;background:var(--accent);width:0;transition:width .3s}
+.xpnums{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);margin-top:4px}
+.wallet{font-weight:600;text-align:right;line-height:1.2}.wallet small{display:block;color:var(--muted);font-weight:400}
+.notice{background:var(--panel);border:1px solid var(--accent);border-radius:6px;padding:8px 12px;margin-bottom:16px}
+.achs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.ach{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:6px}
+.ach.done{border-color:var(--accent)}.ach .bar{height:6px}
+.ach .top{display:flex;justify-content:space-between;gap:8px}.ach .desc,.ach .reward{font-size:.85rem;color:var(--muted)}
+.card.gone{opacity:.7}
+@media (prefers-reduced-motion:reduce){.bar>div{transition:none}}
