@@ -1,0 +1,39 @@
+:root{--bg:#14171c;--panel:#1d2128;--line:#2c323b;--text:#e6e8eb;--muted:#8b94a1;--accent:#6cc4a1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:1px solid var(--line)}
+h1{font-size:1.25rem;margin:0}h2{font-size:1.05rem;margin:0 0 12px}
+.wallet{font-weight:600;font-size:1.1rem}.wallet #currency{color:var(--muted);font-weight:400}
+main{max-width:1000px;margin:0 auto;padding:24px}
+section{margin-bottom:32px}
+.muted{color:var(--muted);font-weight:400;font-size:.9rem}
+button{font:inherit;background:var(--accent);color:#0c1714;border:0;border-radius:6px;padding:8px 14px;cursor:pointer;font-weight:600}
+button:hover:not(:disabled){filter:brightness(1.08)}
+button:disabled{opacity:.4;cursor:not-allowed}
+button:focus-visible,dialog:focus-visible{outline:2px solid #fff;outline-offset:2px}
+button.alt{background:transparent;color:var(--text);border:1px solid var(--line)}
+button.link{background:none;color:var(--muted);font-weight:400;text-decoration:underline;padding:0}
+#games{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+#games button{background:var(--panel);color:var(--text);border:1px solid var(--line)}
+#games button[aria-pressed=true]{border-color:var(--accent);color:var(--accent)}
+.boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.box strong{font-size:1.05rem}.box .odds{font-size:.85rem;color:var(--muted)}
+.box button{margin-top:auto;align-self:flex-start}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.card{background:var(--panel);border:2px solid var(--rc,#888);border-radius:8px;padding:10px;display:flex;flex-direction:column;gap:6px;position:relative}
+.card.locked{border-color:var(--line);opacity:.45}
+.art{aspect-ratio:1;background:#12151a;border-radius:4px;display:grid;place-items:center;overflow:hidden;font-size:2rem;color:var(--muted)}
+.art img{width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+.name{font-weight:600;font-size:.95rem;line-height:1.25}
+.meta{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted)}
+.meta .r{color:var(--rc)}
+.count{position:absolute;top:6px;right:8px;background:#000a;border-radius:10px;padding:0 8px;font-size:.8rem}
+.card .row{display:flex;gap:6px;flex-wrap:wrap}.card .row button{padding:4px 8px;font-size:.8rem}
+dialog{background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:20px;width:min(280px,90vw)}
+dialog::backdrop{background:#000b}
+dialog[open] .card{animation:in .25s ease-out}
+.actions{display:flex;gap:8px;margin-top:14px;justify-content:center}
+.error{color:#ff8a80}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){dialog[open] .card{animation:none}}

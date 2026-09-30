@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Card Vault</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1 id="title">Card Vault</h1>
+  <div class="wallet"><span id="credits">0</span> <span id="currency"></span></div>
+</header>
+<main>
+  <nav id="games" aria-label="Games"></nav>
+  <section><h2>Open a box</h2><div id="boxes" class="boxes"></div></section>
+  <section><h2>Collection <span id="progress" class="muted"></span></h2><div id="grid" class="grid"></div></section>
+  <p id="error" class="error" hidden></p>
+  <button id="reset" class="link">Reset progress</button>
+</main>
+<dialog id="reveal"><div id="revealCard"></div><div class="actions"><button id="keep">Keep</button><button id="sellNow" class="alt"></button></div></dialog>
+<script src="app.js"></script>
+</body>
+</html>

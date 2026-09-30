@@ -1,0 +1,4 @@
+box_id,box_name,cost,description,common,rare,epic,legendary
+standard,Standard Box,250,Mostly common drops,85,14,1,0
+premium,Premium Box,600,Better odds at rare and epic,45,40,14,1
+elite,Elite Box,1500,Best odds at epic and legendary,10,40,35,15
