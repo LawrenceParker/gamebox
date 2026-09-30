@@ -5,3 +5,8 @@ starting_xp,1000
 level_base_xp,500
 level_step_xp,250
 storage_key,cardvault-save-v2
+passive_interval_seconds,60
+passive_max_hours,24
+gamble_win_chance,50
+gamble_win_multiplier,2
+gamble_loss_multiplier,1

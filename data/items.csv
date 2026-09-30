@@ -1,21 +1,3 @@
-﻿item_id,item_name,rarity,value,game,image,gif
-1,Wooden Pickaxe,common,300,Minecraft,https://minecraft.wiki/images/Wooden_Pickaxe_JE3_BE3.png?fa797,
-2,Enchanted Wooden Pickaxe,rare,600,Minecraft,,https://minecraft.wiki/images/Enchanted_Wooden_Pickaxe.gif?38125
-3,Item1,epic,4001,Game1,,
-4,Item2,legendary,3747,Game 2,,
-5,Item3,common,4841,Game1,,
-6,Item4,rare,3667,Game 2,,
-7,Item5,epic,1043,Game1,,
-8,Item6,legendary,592,Game 2,,
-9,Item7,common,4446,Game1,,
-10,Item8,rare,2057,Game 2,,
-11,Item9,epic,1952,Game1,,
-12,Item10,legendary,2888,Game 2,,
-13,Item11,common,761,Game1,,
-14,Item12,rare,2991,Game 2,,
-15,Item13,epic,4952,Game1,,
-16,Item14,legendary,3524,Game 2,,
-17,Item15,common,2998,Game1,,
-18,Item16,rare,4710,Game 2,,
-19,Item17,epic,3948,Game1,,
-20,Item18,legendary,3282,Game 2,,
+item_id,item_name,rarity,value,game,image,gif,set
+1,Wooden Pickaxe,common,300,Minecraft,https://minecraft.wiki/images/Wooden_Pickaxe_JE3_BE3.png?fa797,,pickaxes
+2,Enchanted Wooden Pickaxe,rare,600,Minecraft,,https://minecraft.wiki/images/Enchanted_Wooden_Pickaxe.gif?38125,pickaxes

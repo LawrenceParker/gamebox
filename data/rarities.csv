@@ -1,5 +1,5 @@
-rarity,color,sort_order
-common,#9aa3ad,1
-rare,#4c8dff,2
-epic,#a65df0,3
-legendary,#e8a325,4
+rarity,color,sort_order,passive_xp
+common,#9aa3ad,1,2
+rare,#4c8dff,2,6
+epic,#a65df0,3,15
+legendary,#e8a325,4,40

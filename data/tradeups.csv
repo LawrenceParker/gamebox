@@ -1,0 +1,4 @@
+tradeup_id,name,input_rarity,input_count,output_rarity,success_chance,fail_rarity
+common_to_rare,Common Trade-up,common,5,rare,50,common
+rare_to_epic,Rare Trade-up,rare,5,epic,35,
+epic_to_legendary,Epic Trade-up,epic,5,legendary,25,
